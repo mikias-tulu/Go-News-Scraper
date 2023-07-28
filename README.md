@@ -2,6 +2,10 @@
 
 GoProductReviewScraper is a web scraping project in GoLang that fetches and stores product reviews from popular e-commerce websites. Users can specify a product category or keyword to retrieve the latest reviews related to their interests. The extracted data is stored in a structured format for further analysis or presentation.
 
+**Web Scraping with Colly**
+
+This project uses Colly, a powerful web scraping framework in GoLang. Colly provides a simple API for performing web scraping tasks and is well-suited for writing crawlers, scrapers, and spiders.
+
 ## Features
 
 - Web Scraping: Extract product reviews using GoLang's HTTP client and HTML parsing libraries.
@@ -15,8 +19,8 @@ GoProductReviewScraper is a web scraping project in GoLang that fetches and stor
 
 ## Usage
 
-1. Clone the repository: ``` git clone https://github.com/your-username/GoProductReviewScraper.git ```
- 2. Navigate to the project directory: ``` cd GoProductReviewScraper ```
+1. Clone the repository: ``` git clone https://github.com/mikias-tulu/Go-ProductReview-Scraper.git ```
+ 2. Navigate to the project directory: ``` cd Go-ProductReview-Scraper ```
  3. Install dependencies.
  4. Run the application: ``` go run main.go```
  5. Follow the on-screen prompts to specify the category or topic for news articles.
