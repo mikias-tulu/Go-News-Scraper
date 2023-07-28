@@ -1,10 +1,14 @@
 package main
 
 import (
-	"fmt"
-)
+   "encoding/csv"
+   "fmt"
+   "log"
+   "os"
 
+   "github.com/gocolly/colly"
+)
 func main() {
-	// Scraping code here
-	fmt.Println("Done")
+   // Scraping code here
+   fmt.Println("Done")
 }
