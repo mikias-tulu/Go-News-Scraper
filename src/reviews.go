@@ -1,10 +1,7 @@
 package main
 
 import (
-	//"encoding/csv"
 	"fmt"
-	//"log"
-	//"os"
 
 	"github.com/gocolly/colly"
 )
@@ -28,9 +25,16 @@ func main() {
 			fmt.Println("ProductName: ", name)
 			fmt.Println("Ratings: ", stars)
 			fmt.Println("Price: ", price)
-
+			fmt.Println("-------------------------------------------------")
 		})
 	})
-	c.Visit("https://www.amazon.in/s?k=keyboard")
 
+	// Scrape data from multiple pages of Amazon search results for keyboards
+	numPages := 3 // You can change this value to scrape more or fewer pages
+
+	baseURL := "https://www.amazon.in/s?k=keyboard&page="
+	for page := 1; page <= numPages; page++ {
+		url := baseURL + fmt.Sprintf("%d", page)
+		c.Visit(url)
+	}
 }
